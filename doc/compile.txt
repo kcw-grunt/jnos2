@@ -3,9 +3,10 @@ July 29, 2016 - Compile instructions for JNOS 2.0k
 
 1) Prerequisites
 
-  This software uses ncurses, so you will need to install ncurses libraries
+  This software uses ncurses and libssl-dev to properly compile, so you will need to install ncurses libraries
   and the ncurses development (header files) in order to properly compile :
 
+  ###ncurses
   On rhel based systems, run :
 
      sudo yum install ncurses-devel
@@ -17,6 +18,13 @@ July 29, 2016 - Compile instructions for JNOS 2.0k
      sudo apt-get install ncurses-devel
 
   On other systems, just google how to install ncurses development.
+  
+  ###libssl-dev
+  
+  On ubuntu and debian systems :
+   
+     sudo apt-get install libssl-dev
+  
 
 2) Extracting the files
 
